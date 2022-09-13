@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import StatePage from './StatePage';
 
 function ChoseState() {
     const [state, setState] = useState('')
@@ -17,7 +18,7 @@ function ChoseState() {
         <option Value="Colorado"> Colorado </option>
         <option Value="Hell"> Hell </option>
         </select>
-        {state}
+        <StatePage state={state} />
     </div>
   );
 }
